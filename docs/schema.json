@@ -1,0 +1,204 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "accept_manifest": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "expected_manifest_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "assess_translation": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "attempt",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "cast_vote": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "choice",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "create_proposal": {
+      "params": [
+        [
+          "local_id",
+          "string"
+        ],
+        [
+          "source_language",
+          "string"
+        ],
+        [
+          "source_segments_json",
+          "string"
+        ],
+        [
+          "required_locales_json",
+          "string"
+        ],
+        [
+          "glossary_json",
+          "string"
+        ],
+        [
+          "voters_json",
+          "string"
+        ],
+        [
+          "quorum",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_proposal": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_translation": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "revision",
+          "int"
+        ],
+        [
+          "attempt",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_version": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_ballot": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "revise_proposal": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "source_segments_json",
+          "string"
+        ],
+        [
+          "glossary_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "submit_translation": {
+      "params": [
+        [
+          "proposal_id",
+          "string"
+        ],
+        [
+          "locale",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "translated_segments_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    }
+  }
+}

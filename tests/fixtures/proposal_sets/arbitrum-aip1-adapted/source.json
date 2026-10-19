@@ -1,0 +1,14 @@
+{
+  "fixture_id": "arbitrum-aip1-adapted-en-v1",
+  "source_language": "en",
+  "source_segments": [
+    {"id": "condition", "text": "The DAO should not ratify the grant program until eligibility rules and the selection process are published."},
+    {"id": "allocation", "text": "The requested allocation is 10,000 ARB for 90 days."}
+  ],
+  "required_locales": ["es"],
+  "glossary": [
+    {"source_term": "grant program", "translations": {"es": "programa de subvenciones"}},
+    {"source_term": "eligibility rules", "translations": {"es": "reglas de elegibilidad"}}
+  ],
+  "source_note": "Synthetic bounded test text adapted for VoteGloss; not a verbatim Arbitrum proposal or an official translation. The public thread is cited only as domain context."
+}

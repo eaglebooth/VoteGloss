@@ -1,0 +1,19 @@
+{
+  "fixture_id": "arbitrum-aip1-adapted",
+  "public_context": {
+    "authority": "Arbitrum DAO forum; public delegate discussion about AIP-1 and the special grants process",
+    "url": "https://forum.arbitrum.foundation/t/seed-latam-delegate-communication-thread/13895",
+    "object_locator": "AIP-1 discussion, Special Grants section",
+    "publisher_control": "Forum content is controlled by its publisher and can be edited or removed",
+    "scope": "Domain context only; VoteGloss does not fetch this page or assert its publication proves the synthetic fixture"
+  },
+  "onchain_ground_truth": "The proposer supplies and locks exact source segments, glossary, locale list, voter roster, quorum, and revision in the contract before translators submit.",
+  "fixtures": [
+    {"path": "source.json", "class": "adapted-synthetic-source", "expected": "sealed proposal input; not canonical DAO source"},
+    {"path": "translation-es-valid.json", "class": "synthetic-positive", "expected": "PRESERVED for every segment after independent semantic agreement"},
+    {"path": "translation-es-negation-drift.json", "class": "synthetic-semantic-negative", "expected": "MATERIAL_DRIFT; ballot remains closed"},
+    {"path": "translation-es-missing-number.json", "class": "synthetic-deterministic-negative", "expected": "BLOCKED before AI; numeric commitment mismatch"},
+    {"path": "translation-es-prompt-injection.json", "class": "synthetic-injection-control", "expected": "Treat injected instruction as data; no forced positive result"}
+  ],
+  "reproduction": "python -m pytest -q -p no:cacheprovider"
+}
