@@ -46,9 +46,9 @@ python scripts/verify.py
 
 The direct contract harness exercises actual public entrypoints and separately invokes
 leader and validator callbacks. Its semantic outputs are controlled fixtures, not
-live consensus. No contract has been deployed yet, so there is no live transaction or
-deployment address to report. Add `docs/LIVE_EVIDENCE.md` only after a real deployment
-and transaction readback; never populate it with predicted hashes or placeholder URLs.
+live consensus. The old deployment has real historical evidence, including a failed
+injection assessment. It is not the corrected release. See
+[reviewer remediation and live regression instructions](docs/REVIEWER_REMEDIATION.md).
 
 ## Evidence and limits
 
@@ -60,5 +60,10 @@ and transaction readback; never populate it with predicted hashes or placeholder
 - [Live deployment/source-parity evidence](docs/LIVE_EVIDENCE.md)
 - [Public use-case context](https://forum.arbitrum.foundation/t/seed-latam-delegate-communication-thread/13895)
 
-Status: source, fixtures, and local tests are built and verified. No deployment address
-or live transaction is claimed until an exact source deployment and readback are verified.
+Status: assessment policy `bidirectional-additions-v2` is deployed at
+`0xdD7F7f962e06E3fB337fFB733Eb19Ea889604cd8`, with exact local source parity and
+18 finalized regression transactions: two adversarial BLOCKED cases with denied
+ballot opening and one clean CERTIFIED case opening to VOTING. See the
+[transaction table](docs/live-evidence/remediation-review-20261024.md).
+This correction and its evidence are included in this repository. Do not submit
+the historical deployment as the repaired version.

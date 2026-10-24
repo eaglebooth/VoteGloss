@@ -1,5 +1,10 @@
 # VoteGloss live evidence
 
+> Historical release evidence (2026-10-19), including the injection security failure.
+> This source-parity statement applies only to the original release, not the current
+> corrected source. See [remediation status](REVIEWER_REMEDIATION.md). Do not reuse
+> these transactions as evidence that version 0.2.0 has passed live regression.
+
 ## Deployment identity and source parity
 
 - Contract: `0x0379FE8695da5d779ec0b583bA3DcEc50EA9d374`

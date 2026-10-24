@@ -1,0 +1,7 @@
+{
+  "name": "votegloss-live-regression",
+  "private": true,
+  "type": "module",
+  "scripts": { "test:live": "node scripts/live-regression.mjs" },
+  "devDependencies": { "genlayer-js": "1.1.8" }
+}
